@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+
+
+/*COLOR PALETTE*/
+
+/* $main_dark: #0b132b;
+$main_light: #4ecca3;
+$sec_dark: #1c2541;
+$sec_light: #7cffc4;
+$dark_light: #3a506b; */
+$main_dark: #0b132b;
+$main_light: #19D294;
+$sec_dark: #1c2541;
+$sec_light: #7cffc4;
+$dark_light: #3a506b;
+
+
+/*Size vars*/
+$small: 768px;
+$smallFont:12px;
+
+/*IMPORTS*/
+
+/*components styles*/
+@import './App.scss';
+@import './components/app-bar/app-bar.styles.scss';
+@import './components/hamburger-icon/hamburger.styles.scss';
+@import './components/landing-text/landing-text.styles.scss';
+
+/*sections styles*/
+@import './sections/landing/landing.scss';
+
+
+/*Fonts */
+
+@font-face {
+  font-family: 'Odachi';
+  src: url('./Webfont/Odachi.woff') format('woff'); /* Pretty Modern Browsers */
+}
+
+/*global styles */
+
+h1 {
+
+  
+}
+
+h2 {
+  font-family: 'Odachi';
+}
+
+.container {
+  width:90%;
+}
