@@ -12,17 +12,13 @@ body {
 
 /*COLOR PALETTE*/
 
-/* $main_dark: #0b132b;
-$main_light: #4ecca3;
-$sec_dark: #1c2541;
-$sec_light: #7cffc4;
-$dark_light: #3a506b; */
+
 $main_dark: #0b132b;
 $main_light: #19D294;
 $sec_dark: #1c2541;
 $sec_light: #7cffc4;
 $dark_light: #3a506b;
-
+$light: #EAEBED;
 
 /*Size vars*/
 $small: 768px;
@@ -38,7 +34,8 @@ $smallFont:12px;
 
 /*sections styles*/
 @import './sections/landing/landing.scss';
-
+@import './sections/projects/projects.styles.scss';
+@import './sections/about/about.styles.scss';
 
 /*Fonts */
 
@@ -49,15 +46,34 @@ $smallFont:12px;
 
 /*global styles */
 
-h1 {
 
-  
-}
 
 h2 {
+  color:$sec_dark;
+  font-size: 2em;
+  text-align: center;
   font-family: 'Odachi';
+  margin:1.5em 0 1.2em 0;
+ 
+  span {
+      padding-bottom: 0.5rem;
+      border-bottom: solid 2px $main_light;
+  }
+}
+
+h3 {
+  text-transform: uppercase;
+  color:$main_dark;
+  font-size: 1.3em;
+}
+
+h4 {
+  color:$sec_dark;
+  font-size: 1.1em;
+  font-weight: 400;
 }
 
 .container {
   width:90%;
+  margin: auto;
 }

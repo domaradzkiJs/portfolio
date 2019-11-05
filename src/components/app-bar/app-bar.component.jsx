@@ -19,7 +19,7 @@ class AppBar extends React.Component {
 
             <div className="app-options container">
     
-                <div className="logo">Logo</div>
+                <div className="logo"><span>pd</span></div>
 
                 <Hamburger action={this.handleClick} open={this.state.open}  />
                 <div className={ this.state.open ? "nav-box open" : "nav-box" } >

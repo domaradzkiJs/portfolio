@@ -18,18 +18,53 @@
         
 
         .logo {
-            color:pink;
+            width: 4em;
+            height: 4em;
+            position: relative;          
+            border-radius: 50%;
+            border:transparent solid 1px;
+            
+            &:hover {
+              background: $sec_dark;
+              
+              cursor: pointer;
+            }
+           
+          span {
+            position: absolute;
+            top:-5%;
+            left: 20%;
+            color:$light;
+            font-family: 'odachi';
+            font-size: 3.2em;
+            text-shadow: 2px 2px 1px $main_light;
+          }
+
+
+  
         }
 
         .nav-box {
                 margin-left: auto;
 
                 .nav-item {
-                    padding-left: 1em;                    
+                                       
                     text-transform: uppercase;
                     font-weight: 500;
+                    padding:  1em;
+
+                  
+                      &:hover{
+                        color: $sec_light;
+                        cursor: pointer;
+                        border: transparent;                        
+                        transition: all 280ms ease-in-out;
+                      }
+  
 
                     }
+
+
             }        
   }
 }

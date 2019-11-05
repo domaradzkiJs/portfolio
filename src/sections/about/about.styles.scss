@@ -1,0 +1,67 @@
+.about {
+    h2{
+        color: $light;
+        margin-bottom: 4em;
+    }
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    background: rgb(11,19,43);
+    background: linear-gradient(0deg, rgba(11,19,43,1) 0%, rgba(28,37,65,1) 100%), url('../../transparent.png');
+    background-blend-mode: multiply;
+    
+    color:$sec_dark;
+
+    .about-wrapper {
+        background: $light;
+        border-radius: 15px;
+        height:80%;
+        position: relative;
+       
+        
+        
+        .portret {
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            top:-8%;
+            width:12em;
+            height: 12em;
+            border-radius: 15px;
+            box-shadow: $main_dark 0px 1px 8px;
+            background-image: url('../../portret.png');
+            background-size: cover;
+
+        }
+
+        .text-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin:0 auto;
+            padding-top:13em;
+            .skills{
+                width:33%;
+                text-align: center;
+            }
+            .about-me { 
+                width:33%;
+                text-align: center;
+                flex-direction: column;
+                justify-content: center;
+
+                p{
+                    color: $dark_light;
+                   
+                }
+            }
+            .hobbies {
+                width:33%;
+                text-align: center;
+            }
+        }
+    }
+
+}
