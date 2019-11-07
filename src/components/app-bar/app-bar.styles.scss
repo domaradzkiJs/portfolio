@@ -69,35 +69,3 @@
   }
 }
 
-@media screen and (max-width:$small) {
-    .nav-box {
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        text-align: center;
-        top:0;
-        left:0;
-        height: 100%;
-        width:100%;
-      
-        justify-content: flex-start !important;
-        background: $main_dark;
-        flex-direction: column;
-        clip-path: circle(100px at 90% -20%);
-        -webkit-clip-path: circle(100px at 90% -20%);
-        transition: all 1s ease-out;
-        pointer-events: none;
-         .nav-item{
-           padding: 2em !important;
-           font-size:2em
-  
-         }
-  
-  
-        &.open {
-          pointer-events: all;
-          clip-path: circle(1000px at 90% -20% );
-          -webkit-clip-path: circle(1000px at 90% -20%);
-        }
-      }
-}

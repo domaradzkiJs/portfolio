@@ -56,7 +56,7 @@ class Projects extends React.Component {
     render() {
 
         return(
-            <div className='projects '>
+            <div className='projects'>
             <div className="container">
                 <h2><span>Check out my projects </span> </h2>
                 

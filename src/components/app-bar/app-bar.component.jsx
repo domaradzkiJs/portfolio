@@ -41,7 +41,7 @@ class AppBar extends React.Component {
                         to="projects" 
                         spy={true}
                         smooth={true}
-                        offset={-100}
+                        offset={0}
                         duration={500}>
                         Projects
                 
@@ -50,12 +50,24 @@ class AppBar extends React.Component {
                     <Link 
                         className="nav-item"
                         activeClass="active" 
+                        to="about" 
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}>
+                        About Me
+                
+                    </Link>
+
+                    <Link 
+                        className="nav-item"
+                        activeClass="active" 
                         to="projects" 
                         spy={true}
                         smooth={true}
                         offset={-100}
                         duration={500}>
-                        About Me
+                        Contact
                 
                     </Link>
                 </div>

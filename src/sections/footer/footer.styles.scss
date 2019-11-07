@@ -1,0 +1,45 @@
+.footer {
+    
+    
+
+    width:100%;    
+  
+    background-position: center;
+    background: linear-gradient(180deg, rgba(8,13,29,1) 0%, rgba(8,13,29,1) 100%), url('../../footer.png');
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: screen;
+
+
+
+    .footer-contain {
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+        color: $light;
+        flex-wrap: wrap;
+
+       
+
+    .madeBy {
+        
+      font-style: italic;
+      width: 33.33%;
+      margin: auto;
+    }
+    .mail {
+        width: 33.33%;
+        margin:2em auto;
+    }
+    .phone {
+        width: 33.33%;
+        margin:2em auto;
+    }
+
+    h3 {
+        color: $main_light;
+    }
+ }
+}

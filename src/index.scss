@@ -22,6 +22,9 @@ $light: #EAEBED;
 
 /*Size vars*/
 $small: 768px;
+$medium: 1024px;
+$laptop:1440px;
+$fourk: 2560px;
 $smallFont:12px;
 
 /*IMPORTS*/
@@ -36,6 +39,7 @@ $smallFont:12px;
 @import './sections/landing/landing.scss';
 @import './sections/projects/projects.styles.scss';
 @import './sections/about/about.styles.scss';
+@import './sections/footer/footer.styles.scss';
 
 /*Fonts */
 
@@ -77,3 +81,141 @@ h4 {
   width:90%;
   margin: auto;
 }
+
+
+
+
+
+/* Resize support */
+
+@media screen and (max-width:$fourk) {
+  body {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width:1920px) {
+  body {
+    font-size: 17px;
+  }
+}
+
+
+
+@media screen and (max-width:$laptop) {
+  body {
+    font-size: 16px;
+  }
+
+  .projects .gallery .wrapper {
+    width: 28.8vw;
+    height: 28.8vw; 
+  }
+}
+
+@media screen and (max-width:$medium) {
+  body {
+    font-size: 15px;
+  }
+
+  .projects .gallery .wrapper {
+    width: 40vw;
+    height: 40vw; 
+  }
+}
+
+@media screen and (max-width:$small) {
+body {
+  font-size: 13px;
+}
+
+  .nav-box {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      text-align: center;
+      top:0;
+      left:0;
+      height: 100%;
+      width:100%;
+    
+      justify-content: flex-start !important;
+      background: $main_dark;
+      flex-direction: column;
+      clip-path: circle(100px at 90% -20%);
+      -webkit-clip-path: circle(100px at 90% -20%);
+      transition: all 1s ease-out;
+      pointer-events: none;
+       .nav-item{
+         padding: 2em !important;
+         font-size:2em
+
+       }
+
+
+      &.open {
+        pointer-events: all;
+        clip-path: circle(1000px at 90% -20% );
+        -webkit-clip-path: circle(1000px at 90% -20%);
+      }
+    }
+
+  //PROJECTS
+
+  .projects .gallery .wrapper {
+    width: 40vw;
+    height: 40vw; 
+  }
+
+
+  //ABOUT
+    .about .about-wrapper{
+
+      .portret {
+        top:-5%;
+      }
+    
+    
+    .text-section {
+      flex-direction: column;
+      
+ 
+
+      .skills,.about-me,.hobbies {
+       
+        width:80%;
+      }
+    }
+  }
+
+  .footer .footer-contain{
+    flex-direction: column;
+
+    .mail,.phone,.madeBy {
+      width:80%;
+    }
+  }
+}
+
+@media screen and (max-width:664px) {
+  body {
+    font-size: 12px;
+  }
+
+  .projects .gallery .wrapper {
+    width: 60vw;
+    height: 60vw; 
+  }
+}
+
+@media screen and (max-width:320px) {
+  body {
+    font-size: 10px;
+  }
+
+  .projects .gallery .wrapper {
+    width: 80vw;
+    height: 80vw; 
+  }
+}
+

@@ -3,21 +3,24 @@
         color: $light;
         margin-bottom: 4em;
     }
-    overflow: hidden;
-    height: 100vh;
+    
+    height: 100%;
     width: 100%;
     background: rgb(11,19,43);
     background: linear-gradient(0deg, rgba(11,19,43,1) 0%, rgba(28,37,65,1) 100%), url('../../transparent.png');
     background-blend-mode: multiply;
-    
+    overflow: hidden;
     color:$sec_dark;
-
+  
+    border-bottom: 2px solid $sec_dark;
     .about-wrapper {
         background: $light;
         border-radius: 15px;
-        height:80%;
+        min-height: 90vh;
+        height:90%;
+        margin-bottom: 3em;
         position: relative;
-       
+        
         
         
         .portret {
@@ -38,28 +41,74 @@
 
         .text-section {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
+            flex-wrap: wrap; 
+           
             margin:0 auto;
-            padding-top:13em;
-            .skills{
-                width:33%;
-                text-align: center;
+            padding-top:10em;
+            .icons-set{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                font-size: 2.5em;
+                color: $dark_light;
+                
+                div {
+                    padding:0 0.1em;
+                }
+
+                .git { 
+                    margin-top:0.3em;
+                    color:#24292E;
+                    transition: all 100ms ease-in-out;
+                }
+                .git:hover {
+                    cursor: pointer;
+                    color:$main_light;
+                    font-size:1.1em
+                }
             }
+            .skills{
+        
+                text-align: center;
+                width: 33%;
+                margin:2em auto;
+                }
+            
             .about-me { 
-                width:33%;
+               
                 text-align: center;
                 flex-direction: column;
-                justify-content: center;
+                width: 33%;
+                margin:0 auto;
 
                 p{
                     color: $dark_light;
                    
                 }
+                button {
+                    color:$main_light;
+                    margin: 1em 0;
+                    padding:0.8em;
+                    border: 2px solid  $main_light;
+                    background: rgb(11,19,43);
+                 
+                    border-radius: 15px;
+                    cursor: pointer;
+                    font-size: 1em;
+                    text-transform: uppercase;
+                    &:hover {
+                        color:$sec_light;
+                        background: linear-gradient(180deg, rgba(11,19,43,1) 0%, rgba(28,37,65,1) 100%);
+                       
+                    }
+                }
+
+
             }
             .hobbies {
                 width:33%;
                 text-align: center;
+                margin:2em auto;
             }
         }
     }
