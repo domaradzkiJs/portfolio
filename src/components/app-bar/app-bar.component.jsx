@@ -1,6 +1,7 @@
 import React from 'react';
 import Hamburger from '../hamburger-icon/hamburger.component';
-import { Link } from 'react-scroll';
+import { Link, animateScroll as scroll  } from 'react-scroll';
+
 import '../../index.scss';
 
 
@@ -12,6 +13,7 @@ class AppBar extends React.Component {
     handleClick = () => (
         this.setState({open: !this.state.open})
     )
+
 
     render() {
         return(
@@ -25,9 +27,10 @@ class AppBar extends React.Component {
                 <div className={ this.state.open ? "nav-box open" : "nav-box" } >
     
                     <Link 
+                    onClick={this.handleClick}
                         className="nav-item"
                         activeClass="active" 
-                        to="projects" 
+                        to="big-cool" 
                         spy={true}
                         smooth={true}
                         offset={-100}
@@ -36,33 +39,35 @@ class AppBar extends React.Component {
                 
                     </Link>
                     <Link 
+                    onClick={this.handleClick}
                         className="nav-item"
                         activeClass="active" 
                         to="projects" 
                         spy={true}
                         smooth={true}
-                        offset={0}
+                        offset={-99}
                         duration={500}>
                         Projects
                 
                     </Link>
     
                     <Link 
+                    onClick={this.handleClick}
                         className="nav-item"
                         activeClass="active" 
                         to="about" 
                         spy={true}
                         smooth={true}
-                        offset={0}
+                        offset={-99}
                         duration={500}>
                         About Me
                 
                     </Link>
 
-                    <Link 
+                    <Link onClick={this.handleClick}
                         className="nav-item"
                         activeClass="active" 
-                        to="projects" 
+                        to="footer" 
                         spy={true}
                         smooth={true}
                         offset={-100}

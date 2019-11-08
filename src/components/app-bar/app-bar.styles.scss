@@ -3,8 +3,8 @@
     height:10%;
     background: $main_dark;
     border-bottom: $sec_dark solid 2px;
-    
-
+    z-index: 1000;
+  position: fixed;
 
 
     .app-options {
