@@ -15,7 +15,7 @@ class Projects extends React.Component {
                 text: 'Web-app for searching recipes, it is based on Edamam API',               
                 image: 'https://i.imgur.com/lebNiNi.png',
                 link: 'https://sweetrecipes.000webhostapp.com/',
-                linkHub: ''  
+                linkHub: 'https://github.com/domaradzkiJs/sweet-recipes'  
             },
             {
                 id:2,
@@ -23,7 +23,7 @@ class Projects extends React.Component {
                 text: `League of legends champions browser`,
                 image: 'https://i.imgur.com/6qgHVoK.png',
                 link: 'https://domaradzkijs.github.io/champions/',
-                linkHub: ''  
+                linkHub: 'https://github.com/domaradzkiJs/champions'  
             },
             {
                 id:3,
@@ -31,7 +31,7 @@ class Projects extends React.Component {
                 text: 'My first a bit larger project with Vanilla Javascript, it uses Riot API to search and display players match history',
                 image: 'https://i.imgur.com/YgxdCI4.png',
                 link: 'https://domaradzkijs.github.io/lol-app/',
-                linkHub: ''    
+                linkHub: 'https://github.com/domaradzkiJs/lol-app'    
             },
             {
                 id:4,
@@ -39,15 +39,15 @@ class Projects extends React.Component {
                 text: `My attempt to create a simple 2D platform game with a framework Phaser 2`,
                 image: 'https://i.imgur.com/cC64hDB.png',
                 link: 'https://domaradzkijs.github.io/platform-game/',
-                linkHub: ''   
+                linkHub: 'https://github.com/domaradzkiJs/platform-game'   
             },
             {
                 id:5,
-                title: 'Simple game',
-                text: `My attempt to create a simple 2D platform game with a framework Phaser 2`,
-                image: 'https://i.imgur.com/cC64hDB.png',
-                link: 'https://domaradzkijs.github.io/platform-game/',
-                linkHub: ''   
+                title: 'My Portfolio',
+                text: ``,
+                image: 'https://i.imgur.com/BJe6y9T.png',
+                link: 'https://domaradzkijs.github.io/portfolio/',
+                linkHub: 'https://github.com/domaradzkiJs/portfolio'   
             }
         ]
         }
@@ -69,7 +69,7 @@ class Projects extends React.Component {
                                 <div className='item-heading'> {item.title} </div>
                                 <div className='icons'> 
 
-                                <div className="icon"> <a href={`${item.link}`} target="_blank" rel="noopener noreferrer"> <IoLogoGithub /> </a> </div>
+                                <div className="icon"> <a href={`${item.linkHub}`} target="_blank" rel="noopener noreferrer"> <IoLogoGithub /> </a> </div>
                                 <div className="icon"> <a href={`${item.link}`} target="_blank" rel="noopener noreferrer"> <IoIosLink /> </a> </div>
                                 
                                 </div>
