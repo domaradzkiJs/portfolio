@@ -34,7 +34,7 @@
             height: 12em;
             border-radius: 15px;
             box-shadow: $main_dark 0px 1px 8px;
-            background-image: url('../../zdjecie.png');
+            background-image: url('https://i.imgur.com/sXgfPKZ.jpg');
             background-size: cover;
             
 
@@ -76,7 +76,7 @@
                 }
             
             .about-me { 
-               
+                position: relative;
                 text-align: center;
                 flex-direction: column;
                 width: 33%;
@@ -115,3 +115,4 @@
     }
 
 }
+

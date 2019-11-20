@@ -14,11 +14,11 @@ body {
 
 
 $main_dark: #0b132b;
-$main_light: #19D294;
+$main_light: rgb(25, 210, 148);
 $sec_dark: #1c2541;
 $sec_light: #7cffc4;
 $dark_light: #3a506b;
-$light: #EAEBED;
+$light: rgb(234, 235, 237);
 
 /*Size vars*/
 $small: 768px;
@@ -34,6 +34,7 @@ $smallFont:12px;
 @import './components/app-bar/app-bar.styles.scss';
 @import './components/hamburger-icon/hamburger.styles.scss';
 @import './components/landing-text/landing-text.styles.scss';
+@import './components/contact-form/contact-form.styles.scss';
 
 /*sections styles*/
 @import './sections/landing/landing.scss';

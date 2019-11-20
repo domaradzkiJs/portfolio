@@ -13,7 +13,7 @@ class Projects extends React.Component {
                 id:1,
                 title: 'Recipe app',
                 text: 'Web-app for searching recipes, it is based on Edamam API',               
-                image: 'https://i.imgur.com/lebNiNi.png',
+                image: 'https://i.imgur.com/eEhMYsU.jpg',
                 link: 'https://sweetrecipes.000webhostapp.com/',
                 linkHub: 'https://github.com/domaradzkiJs/sweet-recipes'  
             },
@@ -21,7 +21,7 @@ class Projects extends React.Component {
                 id:2,
                 title: 'Champions',
                 text: `League of legends champions browser`,
-                image: 'https://i.imgur.com/6qgHVoK.png',
+                image: 'https://i.imgur.com/IqTo9yZ.jpg',
                 link: 'https://domaradzkijs.github.io/champions/',
                 linkHub: 'https://github.com/domaradzkiJs/champions'  
             },
@@ -29,7 +29,7 @@ class Projects extends React.Component {
                 id:3,
                 title: 'LoL app',
                 text: 'My first a bit larger project with Vanilla Javascript, it uses Riot API to search and display players match history',
-                image: 'https://i.imgur.com/YgxdCI4.png',
+                image: 'https://i.imgur.com/u7Buxrh.jpg',
                 link: 'https://domaradzkijs.github.io/lol-app/',
                 linkHub: 'https://github.com/domaradzkiJs/lol-app'    
             },
@@ -37,15 +37,23 @@ class Projects extends React.Component {
                 id:4,
                 title: 'Simple game',
                 text: `My attempt to create a simple 2D platform game with a framework Phaser 2`,
-                image: 'https://i.imgur.com/cC64hDB.png',
+                image: 'https://i.imgur.com/OGjTfQj.jpg',
                 link: 'https://domaradzkijs.github.io/platform-game/',
                 linkHub: 'https://github.com/domaradzkiJs/platform-game'   
             },
             {
                 id:5,
+                title: 'Landing Page',
+                text: ``,
+                image: 'https://i.imgur.com/NFZGlUx.jpg',
+                link: 'https://domaradzkijs.github.io/zend/',
+                linkHub: 'https://github.com/domaradzkiJs/zend'   
+            },
+            {
+                id:6,
                 title: 'My Portfolio',
                 text: ``,
-                image: 'https://i.imgur.com/BJe6y9T.png',
+                image: 'https://i.imgur.com/i58NlEO.jpg',
                 link: 'https://domaradzkijs.github.io/portfolio/',
                 linkHub: 'https://github.com/domaradzkiJs/portfolio'   
             }

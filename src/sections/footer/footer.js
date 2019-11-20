@@ -11,7 +11,7 @@ const Footer =()=>  (
             <div className="madeBy">made with <TiHeart style={{color:'pink',fontSize:'1.3em' }}/> by me</div>
             <div className="mail">
                 <h3>Message me</h3>
-                <a href="mailto:domaradzkicode@gmail.com" email rel="noopener noreferrer"> <p>domaradzkicode@gmail.com</p> </a>
+                <a href="mailto:domaradzkicode@gmail.com" email="true" rel="noopener noreferrer"> <p>domaradzkicode@gmail.com</p> </a>
             </div>
         </div>
     </div>

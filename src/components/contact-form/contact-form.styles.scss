@@ -1,0 +1,79 @@
+.form {
+    width: 80%;
+    height: 500px;    
+    color: $main_dark;
+    top:0;
+    margin-top:20vh;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index: 600;
+    overflow-y: hidden;
+    border-radius: 15px;
+    background: white;
+    display: block;
+    border: 2px solid $main_light;
+    padding: 50px;
+
+    .cross {
+        cursor: pointer;
+       
+        position: absolute;
+        top:2em;
+        right:2em;
+        .lineCross{
+            width:30px;
+            height: 4px;
+            background: $dark_light;
+   
+        }
+
+        .lineCross:nth-child(1) {
+            -webkit-transform: translateY(0px) rotate(45deg);
+            -ms-transform: translateY(0px) rotate(45deg);
+            -o-transform: translateY(0px) rotate(45deg);
+            transform: translateY(0px) rotate(45deg);
+        }
+
+        .lineCross:nth-child(2) {
+            -webkit-transform: translateY(-4px) rotate(-45deg);
+            -ms-transform: translateY(-4px) rotate(-45deg);
+            -o-transform: translateY(-4px) rotate(-45deg);
+            transform: translateY(-4px) rotate(-45deg);
+        }
+
+        &:hover {
+            .lineCross{
+                width:35px;
+                height: 5px;
+                background: $main_light;
+    
+            }
+    
+        }
+
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        input, textarea {
+            width: 50%;
+            
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+          }
+    }
+}
+
+

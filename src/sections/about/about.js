@@ -7,7 +7,7 @@ import { IoLogoCss3 } from "react-icons/io";
 import { DiReact } from "react-icons/di";
 import { DiGithubFull } from "react-icons/di";
 import { DiNpm } from "react-icons/di";
-import { DiPhotoshop } from "react-icons/di";
+
 import { FaNode } from "react-icons/fa";
 import { DiMysql } from "react-icons/di";
 import { IoLogoGameControllerB } from "react-icons/io";
@@ -15,23 +15,37 @@ import { FaHeadphonesAlt } from "react-icons/fa";
 import { IoMdBicycle } from "react-icons/io";
 import { IoLogoGithub } from "react-icons/io";
 
+import Form from '../../components/contact-form/contact-form.component';
 
 class About extends React.Component {
     constructor(props) {
         super(props)
-        this.state={data:''}
+        this.state={data:'',
+            visible:"none",
+            
     }
+    }
+
+   handleClick = () => {
+
+
+        this.setState( {visible:'block'} )
+}
 
     render() {
         return(
             <div className='about'>
+            <Form passStyle={this.state.visible} />
                 <div className='container'>
                      <h2><span>Something about me...</span> </h2>
 
                 </div>
 
                 <div className="about-wrapper container" >
-                    <div className="portret"></div>
+                
+                    <div className="portret">
+                        
+                    </div>
                      <div className="text-section">
                          <div className="skills">
                              <h3>Skill-set</h3>
@@ -64,8 +78,9 @@ class About extends React.Component {
                          <div className="about-me">
                              <h3>Paweł Domaradzki</h3>
                              <h4>Front-End Developer</h4>
-                             <p>I am a highly competent IT professional with a proven track record in designing websites, networking and managing databases. I have strong technical skills as well as excellent interpersonal skills, enabling me to interact with a wide range of clients. I am eager to be challenged in order to grow and further improve my IT skills. My greatest passion is in life is using my technical know-how to benefit other people and organisations.</p>
-                             <a href="mailto:domaradzkicode@gmail.com" email rel="noopener noreferrer"> <button>Contact me</button> </a>
+                             
+                             <p>Currently I am getting more familiar with React and at the same time I am constantly expanding my knowledge of javaScript. Previously I was mainly involved in computer graphics but I am always eager to learn new skills.</p>
+                             <a href="mailto:domaradzkicode@gmail.com" email="true" rel="noopener noreferrer"> <button onClick={this.handleClick}>Contact me</button> </a>
                               <div className="icons-set">
                                 <div className="git"><a href="https://github.com/domaradzkiJs" target="_blank" rel="noopener noreferrer"> <IoLogoGithub/> </a> </div>
                          

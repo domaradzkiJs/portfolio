@@ -1,6 +1,6 @@
 import React from 'react';
 import Hamburger from '../hamburger-icon/hamburger.component';
-import { Link, animateScroll as scroll  } from 'react-scroll';
+import { Link  } from 'react-scroll';
 
 import '../../index.scss';
 
@@ -37,7 +37,7 @@ class AppBar extends React.Component {
                     
                     </div>
 
-                <Hamburger action={this.handleClick} open={this.state.open}  />
+                
                 <div className={ this.state.open ? "nav-box open" : "nav-box" } >
     
                     <Link 
@@ -90,6 +90,7 @@ class AppBar extends React.Component {
                 
                     </Link>
                 </div>
+                <Hamburger action={this.handleClick} open={this.state.open}  />
             
     
     
