@@ -9,4 +9,5 @@ Personal website to showcase my projects
 * [Webpack](https://webpack.js.org/) - Module bundle
 
 
-
+## Live version
+[Live](https://domaradzkijs.github.io/portfolio/) - checkout the live version
